@@ -1,0 +1,85 @@
+@media only screen and (max-width: 767px) {
+    #header a {
+        display: none;
+    }
+    #header button {
+        display: none;
+    }
+    .header-function--list {
+        display: none;
+    }
+    .header-function {
+        display: none;
+    }
+    .header-wrapper {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .header-menu--btn{
+        margin-left: 35%;
+    }
+    .certificate-first li,
+    .certificate-seconds li{
+
+        margin: 10% 0;
+    }
+    .certificate-first, .certificate-seconds {
+        padding: 0;
+        font-size: 0.6rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        display: block;
+        list-style: none;
+    }
+    .certificate-img {
+        width: 100%;
+    }
+    #content {
+        text-align: center;
+
+    } 
+    .btn {
+        margin: 0;
+    }
+    .information {
+        text-align: center;
+    }
+    .information-logo {
+        display: none;
+    }
+    .description-first, .description-seconds {
+        display: block;
+        margin: 0 10%;
+        padding: 57px 26px; 
+    }
+    .description-seconds {
+        display: none;
+    }
+    #footer {
+        text-align: center;
+    }
+    .footer-bottom--wrapper {
+        display: block;
+        padding: 37px 16px;
+        margin: 0 10%;
+        justify-content: space-around;
+    }
+    .footer-bottom--wrapper__first {
+        padding: 0;
+        justify-content: center;
+    }
+    .footer-bottom--wrapper__seconds {
+        display: none;
+    }
+}
+@media only screen and (min-width : 768px) and (max-width : 1023px) {
+    .header-menu--btn {
+        display: none;
+    }
+}
+@media only screen and (min-width: 1023px) { 
+    .header-menu--btn {
+        display: none;
+    }
+}

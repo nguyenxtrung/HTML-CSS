@@ -1,0 +1,206 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #e57c238c;
+    margin: 0;
+    padding: 0;
+}
+.home {
+    position: fixed;
+    right: -5%;
+    bottom: 45px;
+    border-radius: 50%;
+    font-size: 15px;
+    opacity: 0.5;
+}
+.home-btn {
+    opacity: 1;
+}
+.home-btn:hover {
+    color: grey;
+}
+.btn {
+    margin-left: 0;
+    border: none;
+    background-color: rgb(255,16,16);
+    color: white;
+    padding: 15px 50px;
+    opacity: 1;
+}
+.btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+
+}
+#header {
+    background-color: #025464;
+    display: block;
+    padding : 37px 16px;
+}
+.header-wrapper {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    position: relative;
+    top: 0;
+}
+.header-wrapper--logo {
+    width: 25%;
+}
+.header-wrapper span {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.header-function  {
+    display: flex;
+    list-style: none;
+}
+.header-function--list {
+    margin-left: 30px;
+    font-size: 0.7rem;
+    opacity: 1;
+}
+.header-function--list a {
+    border-bottom: 2px solid white;
+}
+.header-function--list:hover {
+    opacity: 0.5;
+    transition: .2s linear, background-size  .2s .1s linear;
+}
+#header h1 {
+    text-transform: uppercase;
+    display: block;
+    margin: 10% 10% 5% 10%;
+    font-size: 3rem;
+    color: white;
+    background-color: #025464;
+}
+#header p {
+    margin-top: 10%;
+    color: white;
+}
+#header button {
+    margin : 4% 10% 2% 10%;
+}
+#header p, button {
+    margin: 0px 10%;
+}
+#content {
+    display: block;
+    margin: 0 10%;
+    padding: 57px 26px;
+}
+#content h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 2% 0 5% 0 ;
+}
+#contact h3 {
+    color: white;
+}
+#content .btn {
+    margin-left: 0;
+}
+#certificate {
+    color: white;
+    margin: 5% 0;
+}
+.certificate-first,
+.certificate-seconds {
+    padding: 0;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: flex;
+    list-style: none;
+}
+.certificate-img {
+    width: 50%;
+}
+.information {
+    background-color: #025464;
+    color: white;
+    margin: 0;
+}
+.information-wrapper {
+}
+.information-logo {
+    height: 20%;
+    width: 20%;
+    border-radius: 20%;
+}
+.description-first,
+.description-seconds {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10% ;
+    padding: 57px 26px;
+}
+.description-first {
+
+}
+#footer {
+
+}
+.footer-top {
+    margin: 5% 10% 5%;
+    padding: 0 16px;
+}
+.footer-top :first-child {
+    font-size: 2rem;
+}
+.footer-top :last-child {
+    font-size: 1rem;
+    margin-left: 0;
+}
+.footer-bottom {
+    background-color: #c28166;
+    color: white;
+}
+.footer-bottom--wrapper {
+    display: flex;
+    padding: 16px 16px;
+    margin: 0 10%;
+    justify-content: space-between;
+}
+.footer-bottom--wrapper__first, 
+.footer-bottom--wrapper__seconds {
+    list-style: none;
+}
+.footer-bottom--wrapper__first {
+    display: flex;
+    align-items: center;
+}
+.footer-bottom--wrapper__seconds {
+    padding-left: 0;
+    font-size: 12px;
+}
+.address, .telephone, .email {
+    padding: 4px;
+} 
+.footer-bottom--wrapper__first li .social {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 16px;
+}
+.social {
+    opacity: 1;
+}
+.social:hover {
+    opacity: 0.6;
+}
+.address {
+    font-weight: 600;
+}
+.title {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 20% 0;
+}
+.email {
+
+}

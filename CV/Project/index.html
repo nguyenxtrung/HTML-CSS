@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-w   idth, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="icon" href="" type="image/x-icon" />
+    <!-- Nhắn tin -->
+    <title>Giản</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="header-top-wrapper">
+            <div class="header-top">
+                <div class="header-wrapper--function">
+                    <div class="header__function-first">
+                        <ul class="header__function-list">
+                            <li class="header__function-list--item"><i
+                                    class="fa-sharp fa-solid fa-location-dot"></i>&nbsp;&nbsp;Việt Nam</li>
+                            <li class="header__function-list--item">Tiếng Việt&nbsp;&nbsp;<i
+                                    class="fa-solid fa-chevron-down"></i>
+                            </li>
+                            <li class="header__function-list--item"><i
+                                    class="fa-solid fa-phone"></i>&nbsp;&nbsp;0786307427</li>
+                        </ul>
+                    </div>
+                    <div class="header-logo">
+                        <a style="text-decoration: none; color: white;"href="#">GIẢN</a>
+                    </div>
+                    <div class="header__function-seconds">
+                        <ul class="header__function-list">
+                            <li class="header__function-list--item"><a target="_blank" href="./sign-up/index.html"; style="color: white; text-decoration: none;">Đăng nhập</a></li>
+                            <li class="header__function-list--item"><i
+                                    class="fa-solid fa-bag-shopping"></i>&nbsp;&nbsp;Giỏ hàng</li>
+                            <li class="header__function-list--item"><i class="fa-solid fa-magnifying-glass"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <div class="navigation-wrapper">
+                        <ul class="navigation__list">
+                            <li class="navigation__list-item">có gì mới?</li>
+                            <li class="navigation__list-item">túi xách</li>
+                            <li class="navigation__list-item">phụ nữ</li>
+                            <li class="navigation__list-item">đàn ông</li>
+                            <li class="navigation__list-item">phối đồ</li>
+                            <li class="navigation__list-item">những trẻ em</li>
+                            <li class="navigation__list-item">trang sức & đỒng hồ</li>
+                            <li class="navigation__list-item">sắc đẹp</li>
+                            <li class="navigation__list-item">trang trí & phong cách sống</li>
+                            <li class="navigation__list-item">những món quà</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+        </div>
+        <h1 class="slogan">đơn giản là thước đo của mọi tiêu chuẩn</h1>
+    </div>
+    <div id="content">
+        <div class="product">
+            <div class="product-wrapper">
+                <img style="width: 50%;" src="./assets/V modern vest.jpg" alt="">
+                <h2 class="product-title">Câu chuyện của sự tinh tế</h2>
+                <button class="btn-product">Xem thêm</button>
+            </div>
+            <!-- Slider & JavaScript -->
+            <!-- Full-width images with number and caption text --> 
+            <div class="model-slider">
+                <div class="mySlides fade">
+                    <a href="./product/index.html"><img src="./assets/blazer.jpg" style="width :50%; "></a>
+                </div>
+                <div class="mySlides fade">
+                    <img src="./assets/product2.jpg" style="width:50%">
+                </div>
+                <div class="click-control">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <!-- Next and previous buttons -->
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+        </div>
+        <!-- Script -->
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+    </div>
+    <div class="product-end">
+        <h2>áo blazer cao cấp</h2>
+        <button class="btn-product">mua ngay</button>
+
+    </div>
+    </div>
+    <div class="product-description">
+        <div class="product-description__footer-slider fade">
+            <img class="banner-img" src="./assets/banner-footer2.jpg" alt="" style="width: 100%;">
+            <img class="banner-img" src="./assets/banner-footer.jpg" alt="" style="width: 100%;">
+            <h2 class="product-description__title">Lắng nghe</h2>
+        </div>
+        <!-- script -->
+        <script>
+            let dem = 0;
+            hienthi();
+            function hienthi() {
+                let j;
+                let slides = document.getElementsByClassName("banner-img");
+                for (j = 0; j < slides.length; j++) {
+                    slides[j].style.display = "none";
+                }
+                dem++;
+                if (dem > slides.length) { dem = 1 }
+                slides[dem - 1].style.display = "block";
+                setTimeout(hienthi, 2000); // Change image every 2 seconds
+            }
+        </script>
+        <!-- script -->
+        <div class="product-description__list-wrapper">
+            <div class="product-description__list">
+                <img src="./assets/footer1.jpg" alt="" style="width: 80%;">
+                <h4 class="product-description__list-title">Đơn giản là nền tảng</h4>
+                <a class="product-description__list-description" href="">nền tảng</a>
+            </div>
+            <div class="product-description__list">
+                <img src="./assets/footer2.jpg" alt="" style="width: 80%;">
+                <h4 class="product-description__list-title">Khác biệt tạo nên sự đặc biệt</h4>
+                <a class="product-description__list-description" href="">khác biệt</a>
+            </div>
+            <div class="product-description__list">
+                <img src="./assets/footer3.jpg" alt="" style="width: 80%;">
+                <h4 class="product-description__list-title">Quá trình hình thành</h4>
+                <a class="product-description__list-description" href="">hình thành</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="footer">
+        <div class="footer-wrapper">
+            <div class="footer__list">
+                <ul ><p class="footer__list-title">DỊCH VỤ ĐỘC QUYỀN</p>
+                    <li class="footer__list-title--item">Dịch vụ trực tuyến độc quyền</li>
+                    <li class="footer__list-title--item">Giản</li>
+                    <li class="footer__list-title--item">Đặt lịch hẹn</li>
+                </ul>
+            </div>
+            <div class="footer__list">
+                <ul ><p class="footer__list-title">HỖ TRỢ</p>
+                    <li class="footer__list-title--item">Liên hệ chúng tôi</li>
+                    <li class="footer__list-title--item">Email Huỷ đăng ký</li>
+                    <li class="footer__list-title--item">câu hỏi thường gặp</li>
+                    <li class="footer__list-title--item">Các lựa chọn thanh toán</li>
+                    <li class="footer__list-title--item">Vận chuyển & Giao hàng</li>
+                    <li class="footer__list-title--item">Trả lại & Trao đổi</li>
+                    <li class="footer__list-title--item">Chăm sóc sản phẩm</li>
+                    <li class="footer__list-title--item">Sơ đồ trang web</li>
+                </ul>
+            </div>
+            <div class="footer__list">
+                <ul ><p class="footer__list-title">CÔNG TY</p>
+                    <li class="footer__list-title--item">Về Giản</li>
+                    <li class="footer__list-title--item">Vườn Giản</li>
+                    <li class="footer__list-title--item">Giản cân bằng</li>
+                    <li class="footer__list-title--item">Quy tắc đạo đức</li>
+                    <li class="footer__list-title--item">nghề nghiệp</li>
+                    <li class="footer__list-title--item">Thông báo pháp lý</li>
+                    <li class="footer__list-title--item">Chính sách Quyền riêng tư</li>
+                    <li class="footer__list-title--item">Thông tin doanh nghiệp</li>
+                </ul>
+            </div>
+            <div class="footer__list">
+                <ul ><p class="footer__list-title">LIÊN KẾT</p>
+                    <li class="footer__list-title--item"><i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;Facebook</li>
+                    <li class="footer__list-title--item"><i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;Twitter</li>
+                    <li class="footer__list-title--item"><i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;Instagram</li>
+                    <li class="footer__list-title--item"><i class="fa-brands fa-youtube"></i>&nbsp;&nbsp;Youtube</li>
+                    <li class="footer__list-title--item"><i class="fa-brands fa-podcast"></i>&nbsp;&nbsp;Giản Podcast</li>
+                    <li class="footer__list-title--item"><i class="fa-brands fa-pinterest"></i>&nbsp;&nbsp;Pinterest</li>
+                    <li class="footer__list-title--item"><i class="fa-brands fa-weixin"></i>&nbsp;&nbsp;Wechat</li>
+                </ul>
+            </div>
+            <div class="footer__list">
+                <ul ><p class="footer__list-title">CẬP NHẬT CỦA GIẢN </p>
+                    <li class="footer__list-title--item">
+                        <p>Bằng cách nhập địa chỉ email của bạn bên dưới, bạn đồng ý nhận bản tin của chúng tôi với
+                            quyền truy cập vào các bộ sưu tập, sự kiện và sáng kiến ​​mới nhất của chúng tôi. Thông tin
+                            chi tiết về điều này được cung cấp trong Chính sách quyền riêng tư của chúng tôi</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

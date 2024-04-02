@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="icon" href="./assets/icon.jpg">
+    <title>GianMusic</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <div class="header-wrapper">
+                <div class="header-navigation">
+                    <div class="header-navigation__wrapper">
+                        <ul class="header-navigation__list-first">
+                            <li class="header-navigation__list-item"><i class="fa-sharp fa-solid fa-house"></i> Khám phá</li>
+                            <li class="header-navigation__list-item"><i class="fa-sharp fa-solid fa-chart-simple"></i> #zingchat</li>
+                            <li class="header-navigation__list-item"><i class="fa-sharp fa-solid fa-radio"></i> Radio</li>
+                            <li class="header-navigation__list-item"><i class="fa-sharp fa-solid fa-bookmark"></i> Thư viện</li>
+                        </ul>
+                        <ul class="header-navigation__list-seconds">
+                            <li class="header-navigation__list-item"><i class="fa-sharp fa-solid fa-music"></i> Nhạc mới</li>
+                            <li class="header-navigation__list-item"><i class="fa-sharp fa-solid fa-shapes"></i> Chủ đề & Thể loại</li>
+                            <li class="header-navigation__list-item"><i class="fa-sharp fa-solid fa-star"></i> Top 100</li>
+                        </ul>
+                        <ul class="header-navigation--adv">
+                            <div style="padding: 8px 8px 12px 8px;">
+                                    <li style="font-size: 0.5rem;text-align: center; padding: 6px 0 2px ; overflow: hidden;">
+                                        Nghe nhạc không quảng cáo cùng kho nhạc PREMIUM</li>
+                                    <li><button
+                                            style="background-color: yellow; color: black;border-radius: 10px;margin: 4px; border: none; text-transform: uppercase;font-size: 0.4rem;padding: 4px 16px;">nâng
+                                            cấp tài khoản</button></li>
+                            </div>
+                        </ul>
+                        <ul class="header-navigation__list-third">
+                            <li class="header-navigation__list-item"><i class="fa-solid fa-clock-rotate-left"></i>  Nghe gần đây</li>
+                            <li class="header-navigation__list-item"><i class="fa-solid fa-heart"></i> Bài hát yêu thích</li>
+                            <li class="header-navigation__list-item"><i class="fa-solid fa-list"></i> Playlist</li>
+                            <li class="header-navigation__list-item"><i class="fa-solid fa-compact-disc"></i> Album</li>
+                            <li class="header-navigation__list-item"><i class="fa-solid fa-cloud-arrow-up"></i> Đã tải lên</li>
+                        </ul>
+                        <p style="margin-left: 24px;font-size: 0.6rem;"><i class="fa-solid fa-plus"></i> Tạo playlist
+                            mới</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div class="content-wrapper">
+                <div class="btn-navigation">
+                    <button><i class="fa-solid fa-angle-left"></i></button>
+                    <button><i class="fa-solid fa-angle-right"></i></button>
+                    <input style="border: none; margin: 4px; padding: 4px; background-color: transparent;width: 80%;"
+                        type="text" id="search" placeholder="Tìm kiếm bài hát, nghệ sĩ, lời bài hát..."
+                        title="Type in a category">
+                </div>
+                <div class="content-top">
+                    <div class="content-top__wrapper">
+                        <img class="content-bottom__img"
+                            src="https://static.independent.co.uk/2021/05/21/11/APTOPIX_South_Korea_BTS_Butter_20997.jpg"
+                            alt="">
+                        <img class="content-bottom__img"
+                            src="https://pragativadi.com/wp-content/uploads/2022/08/IMG_20220810_155053.jpg" alt="">
+                        <img class="content-bottom__img"
+                            src="https://e1.pxfuel.com/desktop-wallpaper/750/935/desktop-wallpaper-bts-computer.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="content-navigation">
+                    <h3 style="color: white;">Gần đây</h3>
+                    <a class="content-navigation--add" href="">Tất cả</a>
+                </div>
+                <ul class="content-navigation__list">
+                    <li style="text-align: center;font-size: 0.6rem;color: white;padding: 0 4px"><img style="width: 90%;"
+                            class="content-navigation__list-img"
+                            src="https://ibighit.com/bts/images/bts/discography/proof/discography-cover.png" alt="">BTS
+                    </li>
+                    <li style="text-align: center;font-size: 0.6rem;color: white;padding: 0 4px"><img style="width: 90%;"
+                            class="content-navigation__list-img"
+                            src="https://ibighit.com/bts/images/bts/discography/be/rwXJxHlQ87gEiJJynB1pmScl.jpg" alt="">BTS
+                    </li>
+                    <li style="text-align: center;font-size: 0.6rem;color: white;padding: 0 4px"><img style="width: 90%;"
+                            class="content-navigation__list-img"
+                            src="https://ibighit.com/bts/images/bts/discography/butter-2/butter-2-cover.jpg" alt="">BTS
+                    </li>
+                    <li style="text-align: center;font-size: 0.6rem;color: white;padding: 0 4px"><img style="width: 98%;"
+                            class="content-navigation__list-img"
+                            src="https://images.tokopedia.net/img/cache/700/VqbcmM/2022/12/6/a69ccedd-6f1f-4c53-8b8d-bffabb5d57f0.jpg" alt="">BTS
+                    </li>
+                    <li style="text-align: center;font-size: 0.6rem;color: white;padding: 0 4px"><img style="width: 99%;"
+                            class="content-navigation__list-img"
+                            src="https://i1.sndcdn.com/artworks-zWOADzG5essfwcZl-OawDyA-t500x500.jpg" alt="">BTS
+                    </li>
+                    <li style="text-align: center;font-size: 0.6rem;color: white;padding: 0 4px"><img style="width: 90%;"
+                            class="content-navigation__list-img"
+                            src="https://citytrend.com.ng/wp-content/uploads/2023/03/Download-Jimin-%E2%80%94-FACE-Album.jpeg" alt="">BTS
+                    </li>
+                </ul>
+                <div class="content-navigation">
+                    <h3 style="color: white;">Mới phát hành</h3>
+
+                    <a class="content-navigation--add" href="">Tất cả</a>
+                </div>
+                <ul class="content-navigation--pop">
+                    <li class="content-navigation--pop__list"><button style="background-color: purple;"
+                            class="content-navigation--pop__list-item">Tất cả</button></li>
+                    <li class="content-navigation--pop__list"><button class="content-navigation--pop__list-item">Việt
+                            Nam</button></li>
+                    <li class="content-navigation--pop__list"><button class="content-navigation--pop__list-item">Quốc
+                            tế</button></li>
+                </ul>
+                <div class="content-list__navigation">
+
+                    <ul class="content-list__navigation-first">
+                        <li>
+                                <div style="display: flex;margin: 2px;">
+                                <img class="content-list__navigation-img"
+                                        src="https://i1.sndcdn.com/artworks-7nmc0L048KDmtv7Q-aSOK7A-t500x500.jpg"
+                                        alt="">
+                                        <ul style="padding: 0;">
+                                                <li>
+                                                        <h3 style="color: white;font-size: 0.8rem;padding-left: 12px;margin-bottom: 0;">Still with you</h3>
+
+                                                </li>
+                                                <li>
+                                                        <h5 style="color: grey;font-size: 0.5rem;padding-left: 12px;margin: 0;">JungKook of BTS</h5>
+
+                                                </li>
+                                        </ul>
+                                </div>
+                        </li>
+                        <li>
+                                <div style="display: flex;margin: 2px;">
+                                        <img class="content-list__navigation-img"
+                                        src="https://i.pinimg.com/564x/80/0b/3c/800b3cec4b25b20a89af913a65151877.jpg"
+                                        alt="">
+                                        <ul style="padding: 0;">
+                                                <li>
+                                                        <h3 style="color: white;font-size: 0.8rem;padding-left: 12px;margin-bottom: 0;">Euphoria</h3>
+
+                                                </li>
+                                                <li>
+                                                        <h5 style="color: grey;font-size: 0.5rem;padding-left: 12px;margin: 0;">JungKook of BTS</h5>
+
+                                                </li>
+                                        </ul>
+                                </div>
+                        </li>
+                        <li>
+                                <div style="display: flex;margin: 2px;">
+                                        <img class="content-list__navigation-img"
+                                        src="https://m.media-amazon.com/images/I/51td-8B4q5L._UXNaN_FMjpg_QL85_.jpg"
+                                        alt="">
+                                        <ul style="padding: 0;">
+                                                <li>
+                                                        <h3 style="color: white;font-size: 0.8rem;padding-left: 12px;margin-bottom: 0;">Euphoria</h3>
+
+                                                </li>
+                                                <li>
+                                                        <h5 style="color: grey;font-size: 0.5rem;padding-left: 12px;margin: 0;">JungKook of BTS</h5>
+
+                                                </li>
+                                        </ul>
+                                </div>
+                        </li>
+                    </ul>
+                    <ul class="content-list__navigation-seconds">
+                        <li>
+                                <div style="display: flex;margin: 2px;">
+                                        <img class="content-list__navigation-img"
+                                        src="https://upload.wikimedia.org/wikipedia/en/c/c0/Agust_D_-_D-Day.png"
+                                        alt="">
+                                        <ul style="padding: 0;">
+                                                <li>
+                                                        <h3 style="color: white;font-size: 0.8rem;padding-left: 12px;margin-bottom: 0;">Euphoria</h3>
+
+                                                </li>
+                                                <li>
+                                                        <h5 style="color: grey;font-size: 0.5rem;padding-left: 12px;margin: 0;">JungKook of BTS</h5>
+
+                                                </li>
+                                        </ul>
+                                </div>
+                        </li>
+                        <li>
+                                <div style="display: flex;margin: 2px;">
+                                        <img class="content-list__navigation-img"
+                                        src="https://upload.wikimedia.org/wikipedia/vi/8/84/Fake_Love_%28Rocking_Vibe_Mix%29_Cover_Art.jpg"
+                                        alt="">
+                                        <ul style="padding: 0;">
+                                                <li>
+                                                        <h3 style="color: white;font-size: 0.8rem;padding-left: 12px;margin-bottom: 0;">Euphoria</h3>
+
+                                                </li>
+                                                <li>
+                                                        <h5 style="color: grey;font-size: 0.5rem;padding-left: 12px;margin: 0;">JungKook of BTS</h5>
+
+                                                </li>
+                                        </ul>
+                                </div>
+                        </li>
+                        <li>
+                                <div style="display: flex;margin: 2px;">
+                                        <img class="content-list__navigation-img"
+                                        src="https://i1.sndcdn.com/artworks-BeUa1QYEkwurGh7K-w0R9dw-t500x500.jpg"
+                                        alt="">
+                                        <ul style="padding: 0;">
+                                                <li>
+                                                        <h3 style="color: white;font-size: 0.8rem;padding-left: 12px;margin-bottom: 0;">Euphoria</h3>
+
+                                                </li>
+                                                <li>
+                                                        <h5 style="color: grey;font-size: 0.5rem;padding-left: 12px;margin: 0;">JungKook of BTS</h5>
+
+                                                </li>
+                                        </ul>
+                                </div>
+                        </li>
+                    </ul>
+                    <ul class="content-list__navigation-third">
+                        <li>
+                                <div style="display: flex;margin: 2px;">
+                                        <img class="content-list__navigation-img"
+                                        src="https://i.pinimg.com/550x/a2/37/ed/a237ed542d37b12b1651df404b11c42f.jpg"
+                                        alt="">
+                                        <ul style="padding: 0;">
+                                                <li>
+                                                        <h3 style="color: white;font-size: 0.8rem;padding-left: 12px;margin-bottom: 0;">Euphoria</h3>
+
+                                                </li>
+                                                <li>
+                                                        <h5 style="color: grey;font-size: 0.5rem;padding-left: 12px;margin: 0;">JungKook of BTS</h5>
+
+                                                </li>
+                                        </ul>
+                                </div>
+                        </li>
+                        <li>
+                                <div style="display: flex;margin: 2px;">
+                                        <img class="content-list__navigation-img"
+                                        src="https://i1.sndcdn.com/artworks-000628932154-0qherc-t500x500.jpg"
+                                        alt="">
+                                        <ul style="padding: 0;">
+                                                <li>
+                                                        <h3 style="color: white;font-size: 0.8rem;padding-left: 12px;margin-bottom: 0;">Euphoria</h3>
+
+                                                </li>
+                                                <li>
+                                                        <h5 style="color: grey;font-size: 0.5rem;padding-left: 12px;margin: 0;">JungKook of BTS</h5>
+
+                                                </li>
+                                        </ul>
+                                </div>
+                        </li>
+                        <li>
+                                <div style="display: flex;margin: 2px;">
+                                        <img class="content-list__navigation-img"
+                                        src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/BTS_-_Take_Two.png/220px-BTS_-_Take_Two.png"
+                                        alt="">
+                                        <ul style="padding: 0;">
+                                                <li>
+                                                        <h3 style="color: white;font-size: 0.8rem;padding-left: 12px;margin-bottom: 0;">Euphoria</h3>
+
+                                                </li>
+                                                <li>
+                                                        <h5 style="color: grey;font-size: 0.5rem;padding-left: 12px;margin: 0;">JungKook of BTS</h5>
+
+                                                </li>
+                                        </ul>
+                                </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-list__direction">
+                    <ul class="content-list__direction-text">
+                        <li>
+                            <h4 style="color: white;">Top</h4>
+                        </li>
+                        <li>
+                            <a class="content-navigation--add" href="">Tất cả</a>
+                        </li>
+                    </ul>
+                    <ul class="content-list__direction-list">
+                        <li><img class="content-list__direction-img"
+                                src="https://upload.wikimedia.org/wikipedia/en/e/e2/BTS%2C_Love_Yourself_Answer%2C_album_cover.jpg"
+                                alt=""></li>
+                        <li><img class="content-list__direction-img"
+                                src="https://upload.wikimedia.org/wikipedia/en/e/e2/BTS%2C_Love_Yourself_Answer%2C_album_cover.jpg"
+                                alt=""></li>
+                        <li><img class="content-list__direction-img"
+                                src="https://upload.wikimedia.org/wikipedia/en/e/e2/BTS%2C_Love_Yourself_Answer%2C_album_cover.jpg"
+                                alt=""></li>
+                        <li><img class="content-list__direction-img"
+                                src="https://upload.wikimedia.org/wikipedia/en/e/e2/BTS%2C_Love_Yourself_Answer%2C_album_cover.jpg"
+                                alt=""></li>
+                    </ul>
+                    <h4 style="color: white;">Drop</h4>
+                    <ul class="content-list__direction-list">
+                        <li><img class="content-list__direction-img"
+                                src="https://upload.wikimedia.org/wikipedia/en/e/e2/BTS%2C_Love_Yourself_Answer%2C_album_cover.jpg"
+                                alt=""></li>
+                        <li><img class="content-list__direction-img"
+                                src="https://upload.wikimedia.org/wikipedia/en/e/e2/BTS%2C_Love_Yourself_Answer%2C_album_cover.jpg"
+                                alt=""></li>
+                        <li><img class="content-list__direction-img"
+                                src="https://upload.wikimedia.org/wikipedia/en/e/e2/BTS%2C_Love_Yourself_Answer%2C_album_cover.jpg"
+                                alt=""></li>
+                        <li><img class="content-list__direction-img"
+                                src="https://upload.wikimedia.org/wikipedia/en/e/e2/BTS%2C_Love_Yourself_Answer%2C_album_cover.jpg"
+                                alt=""></li>
+                    </ul>
+                    <h4 style="color: white;">Bass</h4>
+                    <ul class="content-list__direction-list">
+                        <li><img class="content-list__direction-img"
+                                src="https://upload.wikimedia.org/wikipedia/en/e/e2/BTS%2C_Love_Yourself_Answer%2C_album_cover.jpg"
+                                alt=""></li>
+                        <li><img class="content-list__direction-img"
+                                src="https://upload.wikimedia.org/wikipedia/en/e/e2/BTS%2C_Love_Yourself_Answer%2C_album_cover.jpg"
+                                alt=""></li>
+                        <li><img class="content-list__direction-img"
+                                src="https://upload.wikimedia.org/wikipedia/en/e/e2/BTS%2C_Love_Yourself_Answer%2C_album_cover.jpg"
+                                alt=""></li>
+                        <li><img class="content-list__direction-img"
+                                src="https://upload.wikimedia.org/wikipedia/en/e/e2/BTS%2C_Love_Yourself_Answer%2C_album_cover.jpg"
+                                alt=""></li>
+                    </ul>
+                    <h4 style="color: white;">Chill</h4>
+                    <ul class="content-list__direction-list">
+                        <li><img class="content-list__direction-img"
+                                src="https://upload.wikimedia.org/wikipedia/en/e/e2/BTS%2C_Love_Yourself_Answer%2C_album_cover.jpg"
+                                alt=""></li>
+                        <li><img class="content-list__direction-img"
+                                src="https://upload.wikimedia.org/wikipedia/en/e/e2/BTS%2C_Love_Yourself_Answer%2C_album_cover.jpg"
+                                alt=""></li>
+                        <li><img class="content-list__direction-img"
+                                src="https://upload.wikimedia.org/wikipedia/en/e/e2/BTS%2C_Love_Yourself_Answer%2C_album_cover.jpg"
+                                alt=""></li>
+                        <li><img class="content-list__direction-img"
+                                src="https://upload.wikimedia.org/wikipedia/en/e/e2/BTS%2C_Love_Yourself_Answer%2C_album_cover.jpg"
+                                alt=""></li>
+                    </ul>
+                </div>
+                <div class="content-bottom">
+                    <h4 style="color: white;">Chart</h4>
+                    <div class="content-bottom__wrapper">
+                        <img class="content-bottom__img"
+                            src="https://static.independent.co.uk/2021/05/21/11/APTOPIX_South_Korea_BTS_Butter_20997.jpg"
+                            alt="">
+                        <img class="content-bottom__img"
+                            src="https://pragativadi.com/wp-content/uploads/2022/08/IMG_20220810_155053.jpg" alt="">
+                        <img class="content-bottom__img"
+                            src="https://e1.pxfuel.com/desktop-wallpaper/750/935/desktop-wallpaper-bts-computer.jpg"
+                            alt="">
+
+                    </div>
+                </div>
+                <div class="content-chart">
+                    <div class="content-chart--wrapper">
+                        <div class="content-chart--rank">
+                            <h3 style="color: #42195f;">#chart</h3>
+                            <ul class="content-chart__list">
+                                <li class="content-chart__list-item">
+                                    <img class="content-chart__list-img"
+                                        src="data:image/png;base64,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"
+                                        alt="">
+                                </li>
+                                <li class="content-chart__list-item">
+                                    <img class="content-chart__list-img"
+                                        src="data:image/png;base64,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"
+                                        alt="">
+                                </li>
+                                <li class="content-chart__list-item">
+                                    <img class="content-chart__list-img"
+                                        src="data:image/png;base64,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"
+                                        alt="">
+                                </li>
+                            </ul>
+                            <butto class="content-chart--btn">Xem thêm</button>
+                        </div>
+
+                        <div class="content-chart--description">
+                            <ul class="content-chart--description__list">
+                                <li class="content-chart--description__list-item"><span
+                                        class="description-first"></span></li>
+                                <li class="content-chart--description__list-item"><span
+                                        class="description-seconds"></span></li>
+                                <li class="content-chart--description__list-item"><span
+                                        class="description-third"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-bottom__wrapper">
+                    <img class="content-bottom__img"
+                        src="https://static.independent.co.uk/2021/05/21/11/APTOPIX_South_Korea_BTS_Butter_20997.jpg"
+                        alt="">
+                    <img class="content-bottom__img"
+                        src="https://pragativadi.com/wp-content/uploads/2022/08/IMG_20220810_155053.jpg" alt="">
+                    <img class="content-bottom__img"
+                        src="https://e1.pxfuel.com/desktop-wallpaper/750/935/desktop-wallpaper-bts-computer.jpg" alt="">
+                </div>
+                <h4 style="color: white;">Top 100</h4>
+                <ul class="content-list__direction-list">
+                    <li><img class="content-list__direction-img"
+                            src="https://upload.wikimedia.org/wikipedia/en/e/e2/BTS%2C_Love_Yourself_Answer%2C_album_cover.jpg"
+                            alt=""></li>
+                    <li><img class="content-list__direction-img"
+                            src="https://upload.wikimedia.org/wikipedia/en/e/e2/BTS%2C_Love_Yourself_Answer%2C_album_cover.jpg"
+                            alt=""></li>
+                    <li><img class="content-list__direction-img"
+                            src="https://upload.wikimedia.org/wikipedia/en/e/e2/BTS%2C_Love_Yourself_Answer%2C_album_cover.jpg"
+                            alt=""></li>
+                    <li><img class="content-list__direction-img"
+                            src="https://upload.wikimedia.org/wikipedia/en/e/e2/BTS%2C_Love_Yourself_Answer%2C_album_cover.jpg"
+                            alt=""></li>
+                </ul>
+                <h4 style="color: white;">Album hot</h4>
+                <ul class="content-list__direction-list">
+                    <li><img class="content-list__direction-img"
+                            src="https://upload.wikimedia.org/wikipedia/en/e/e2/BTS%2C_Love_Yourself_Answer%2C_album_cover.jpg"
+                            alt=""></li>
+                    <li><img class="content-list__direction-img"
+                            src="https://upload.wikimedia.org/wikipedia/en/e/e2/BTS%2C_Love_Yourself_Answer%2C_album_cover.jpg"
+                            alt=""></li>
+                    <li><img class="content-list__direction-img"
+                            src="https://upload.wikimedia.org/wikipedia/en/e/e2/BTS%2C_Love_Yourself_Answer%2C_album_cover.jpg"
+                            alt=""></li>
+                    <li><img class="content-list__direction-img"
+                            src="https://upload.wikimedia.org/wikipedia/en/e/e2/BTS%2C_Love_Yourself_Answer%2C_album_cover.jpg"
+                            alt=""></li>
+                </ul>
+                <div class="content-list__direction-bottom">
+                    <h4 style="color: white;">Radio nổi bật</h4>
+                    <ul class="content-list__direction-bottom--list">
+                        <li class="content-list__direction-bottom--list__item"><img
+                                class="content-list__direction-bottom--list__item-img"
+                                src="https://i.pinimg.com/originals/ef/7c/c3/ef7cc3e8217467b251d71cef08475226.png"
+                                alt=""></li>
+                        <li class="content-list__direction-bottom--list__item"><img
+                                class="content-list__direction-bottom--list__item-img"
+                                src="https://i.pinimg.com/originals/ef/7c/c3/ef7cc3e8217467b251d71cef08475226.png"
+                                alt=""></li>
+                        <li class="content-list__direction-bottom--list__item"><img
+                                class="content-list__direction-bottom--list__item-img"
+                                src="https://i.pinimg.com/originals/ef/7c/c3/ef7cc3e8217467b251d71cef08475226.png"
+                                alt=""></li>
+                        <li class="content-list__direction-bottom--list__item"><img
+                                class="content-list__direction-bottom--list__item-img"
+                                src="https://i.pinimg.com/originals/ef/7c/c3/ef7cc3e8217467b251d71cef08475226.png"
+                                alt=""></li>
+                        <li class="content-list__direction-bottom--list__item"><img
+                                class="content-list__direction-bottom--list__item-img"
+                                src="https://i.pinimg.com/originals/ef/7c/c3/ef7cc3e8217467b251d71cef08475226.png"
+                                alt=""></li>
+                        <li class="content-list__direction-bottom--list__item"><img
+                                class="content-list__direction-bottom--list__item-img"
+                                src="https://i.pinimg.com/originals/ef/7c/c3/ef7cc3e8217467b251d71cef08475226.png"
+                                alt=""></li>
+                    </ul>
+                </div>
+                <div class="content-footer">
+                    <a class="content-navigation--add" href="">Đối tác âm nhạc</a>
+                    <ul class="content-footer__list">
+                        <li class="content-footer__list-item"><img class="content-footer__list-item--img"
+                                src="https://www.ibighit.com/images/meta-card.jpg" alt=""></li>
+                        <li class="content-footer__list-item"><img class="content-footer__list-item--img"
+                                src="https://www.ibighit.com/images/meta-card.jpg" alt=""></li>
+                        <li class="content-footer__list-item"><img class="content-footer__list-item--img"
+                                src="https://www.ibighit.com/images/meta-card.jpg" alt=""></li>
+                        <li class="content-footer__list-item"><img class="content-footer__list-item--img"
+                                src="https://www.ibighit.com/images/meta-card.jpg" alt=""></li>
+                        <li class="content-footer__list-item"><img class="content-footer__list-item--img"
+                                src="https://www.ibighit.com/images/meta-card.jpg" alt=""></li>
+                        <li class="content-footer__list-item"><img class="content-footer__list-item--img"
+                                src="https://www.ibighit.com/images/meta-card.jpg" alt=""></li>
+                        <li class="content-footer__list-item"><img class="content-footer__list-item--img"
+                                src="https://www.ibighit.com/images/meta-card.jpg" alt=""></li>
+                        <li class="content-footer__list-item"><img class="content-footer__list-item--img"
+                                src="https://www.ibighit.com/images/meta-card.jpg" alt=""></li>
+                    </ul>
+                    <ul class="content-footer__list">
+                        <li class="content-footer__list-item"><img class="content-footer__list-item--img"
+                                src="https://www.ibighit.com/images/meta-card.jpg" alt=""></li>
+                        <li class="content-footer__list-item"><img class="content-footer__list-item--img"
+                                src="https://www.ibighit.com/images/meta-card.jpg" alt=""></li>
+                        <li class="content-footer__list-item"><img class="content-footer__list-item--img"
+                                src="https://www.ibighit.com/images/meta-card.jpg" alt=""></li>
+                        <li class="content-footer__list-item"><img class="content-footer__list-item--img"
+                                src="https://www.ibighit.com/images/meta-card.jpg" alt=""></li>
+                        <li class="content-footer__list-item"><img class="content-footer__list-item--img"
+                                src="https://www.ibighit.com/images/meta-card.jpg" alt=""></li>
+                        <li class="content-footer__list-item"><img class="content-footer__list-item--img"
+                                src="https://www.ibighit.com/images/meta-card.jpg" alt=""></li>
+                        <li class="content-footer__list-item"><img class="content-footer__list-item--img"
+                                src="https://www.ibighit.com/images/meta-card.jpg" alt=""></li>
+                        <li class="content-footer__list-item"><img class="content-footer__list-item--img"
+                                src="https://www.ibighit.com/images/meta-card.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+
+            <div>
+                <ul class="header-wrapper__account">
+                    <li><button
+                            style="margin-left :8px;font-size: 8px;padding: 6px 16px; border-radius: 12px;background-color: #8080805c; color: #d7bed7;border: none; font-weight: 600;"><i
+                                class="fa-solid fa-download"></i>Tải bản Windows</button></li>
+                    <li><button style="font-size: 12px;background-color: transparent; border: none;"><i
+                                class="fa-solid fa-gear"></i></button></li>
+                    <li><i style="font-size: 12px; margin-right: 8px;" class="fa-solid fa-user"></i></li>
+                </ul>
+            </div>
+            <div>
+                <ul style="padding: 0;list-style: none;">
+                    <li style="margin: 4px 0;padding: 0 4px;"><button
+                            style="padding: 6px 14px;font-size: 0.6rem; background-color: #80808087; border: none; color: white;border-radius: 10px;">Nghe
+                            gần đây</button></li>
+                    <li
+                        style="text-align: left;width: 90%;font-size: 0.4rem;color: white;border-bottom: 1px solid rgb(0 0 0 / 20%);padding: 4px 0;">
+                        <img style="width: 20%; padding-left: 8px;"
+                            src="https://ibighit.com/bts/images/bts/discography/proof/discography-cover.png" alt="">
+                    </li>
+                    <li
+                        style="text-align: left;width: 90%;font-size: 0.4rem;color: white;border-bottom: 1px solid rgb(0 0 0 / 20%);padding: 4px 0;">
+                        <img style="width: 20%; padding-left: 8px;"
+                            src="https://ibighit.com/bts/images/bts/discography/proof/discography-cover.png" alt="">
+                    </li>
+                    <li
+                        style="text-align: left;width: 90%;font-size: 0.4rem;color: white;border-bottom: 1px solid rgb(0 0 0 / 20%);padding: 4px 0;">
+                        <img style="width: 20%; padding-left: 8px;"
+                            src="https://ibighit.com/bts/images/bts/discography/proof/discography-cover.png" alt="">
+                    </li>
+                    <li
+                        style="text-align: left;width: 90%;font-size: 0.4rem;color: white;border-bottom: 1px solid rgb(0 0 0 / 20%);padding: 4px 0;">
+                        <img style="width: 20%; padding-left: 8px;"
+                            src="https://ibighit.com/bts/images/bts/discography/proof/discography-cover.png" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div style="max-width: 120px; margin: auto;text-align: center;">
+                <p style="font-size: 0.6rem ; color: white;margin: 16px 4px;text-align: center;">Khám phá thêm các bài hát mới của BTS</p>
+                <button
+                    style="font-size: 0.6rem ; color: white; background-color:#9b4ddf;border: none; border-radius: 20px; padding: 4px 16px;"><i
+                        style="padding-right: 6px;" class="fa-solid fa-play"></i>Phát nhạc</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    color: #333;
+    font-size: 62.5%;
+    font: normal normal 12px/12px "FuturaLTPro-Book","Arial Bold",sans-serif;
+
+  }
+  ul {
+    list-style: none;
+  }
+  .main {
+/* 
+    background-image: url(./banner.jpg);
+    height: 500px; /* You must set a specified height
+    background-position: center; /* Center the image
+    background-repeat: no-repeat; /* Do not repeat the image
+    background-size: cover; Resize the background image to cover the entire container
+     */
+    /* min-height: 100vh;
+    display: flex;
+    justify-content: center; */
+  }
+  .heading {
+    letter-spacing: 4px;
+    font-size: 10rem;
+    text-align: center;
+    margin: 20% 10% 10%;
+  }
+  .header-wrapper--function {
+    display: flex;
+    height: 12vh;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #1b1b1b82;
+    align-items: center;
+    color: white;
+}
+.header-logo {
+    font-size: 2rem;
+    opacity: 0.7;
+}
+.header__function-first, .header__function-seconds {
+    font-size: 1rem;
+}
+
+.header__function-list {
+    padding: 0;
+    display: flex;
+    list-style: none;
+
+}
+.header__function-seconds {
+
+}
+.header__function-list--item {
+    cursor: pointer;
+    padding: 0 8px;
+    opacity: 0.7;
+}
+.header__function-list--item:hover {
+    opacity: 1;
+    font-size: 0.8rem;
+}
+.description {
+    display: flex;
+    justify-content: space-around;
+}
+.description-wrapper {
+    width: 50%;
+    }
+.description__list {
+    position: relative;
+    top: 10%;
+    margin: 10% 0;
+}
+.description__list-item {
+    text-transform: uppercase;
+    margin-left: 20%;
+    font-size: 1rem;
+    padding: 6% 0;
+    cursor: pointer;
+}
+.btn-buy {
+    padding: 8%;
+    width: 80%;
+    font-size: 12px;
+    background-color: white;
+    color: black;
+}
+.product-description--title {
+    padding: 4% 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 8% 20%;
+    border-top: 1px solid grey;
+}
+.product-add {
+    text-align: center;
+}
+.product-add--title {
+    margin: 10% 0;
+}
